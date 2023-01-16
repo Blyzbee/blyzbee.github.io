@@ -41,6 +41,15 @@ img {
   display: none;
 }
 
+#section1 img {
+  margin-bottom: 10px;
+}
+
+#section2 {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
 @media screen and (min-width: 425px) {
   .header-background {
     display: flex;
