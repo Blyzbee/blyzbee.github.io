@@ -1,0 +1,62 @@
+:root {
+  /* COLORS */
+  --primary-color: #f44336;
+  --background-color: #f1f1f1;
+  --dark-color: black;
+  --grey-color: #616161;
+  --light-color: white;
+
+  background-color: var(--background-color);
+  color: var(--grey-color);
+
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--dark-color);
+}
+
+strong {
+  color: var(--dark-color);
+}
+
+section {
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.header-background {
+  display: none;
+}
+
+@media screen and (min-width: 425px) {
+  .header-background {
+    display: flex;
+    background-image: url("./assets/london2.jpg");
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-background > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .header-background > div:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+}
