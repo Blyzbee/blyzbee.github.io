@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
@@ -36,20 +36,48 @@
       <article>
         <h2>Good Offers Right Now</h2>
         <p>Up to <strong>50%</strong> discount</p>
-        <div>
-          <img src="./assets/cinqueterre.jpg" alt="cinqueterre" />
-          <img src="./assets/newyork2.jpg" alt="New York" />
-          <img src="./assets/sanfran.jpg" alt="Sanfran" />
-          <img src="./assets/pisa.jpg" alt="Pisa" />
-          <img src="./assets/paris.jpg" alt="Paris" />
-        </div>
+        <ul>
+          <li>
+            <figure>
+              <img src="./assets/cinqueterre.jpg" alt="cinqueterre" />
+              <figcaption>Cinqueterre</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/newyork2.jpg" alt="New York" />
+              <figcaption>New York</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/sanfran.jpg" alt="Sanfran" />
+              <figcaption>Sanfran</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/pisa.jpg" alt="Pisa" />
+              <figcaption>Pisa</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/paris.jpg" alt="Paris" />
+              <figcaption>Paris</figcaption>
+            </figure>
+          </li>
+        </ul>
       </article>
       <article>
         <h2>Explore Nature</h2>
         <p>Travel with us and see nature at its finest</p>
         <div>
           <div>
-            <img src="./assets/mountains2.jpg" alt="Mountains in Austria" />
+            <figure>
+              <img src="./assets/mountains2.jpg" alt="Mountains in Austria" />
+              <figcaption>Austria</figcaption>
+            </figure>
             <h2>Mountains, Austria</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
@@ -60,7 +88,13 @@
             <button class="button2">Buy tickets</button>
           </div>
           <div>
-            <img src="./assets/ocean2.jpg" alt="Ocean at West Coast, Norway" />
+            <figure>
+              <img
+                src="./assets/ocean2.jpg"
+                alt="Ocean at West Coast, Norway"
+              />
+              <figcaption>Weast Coast, Norway</figcaption>
+            </figure>
             <h2>West Coast, Norway</h2>
             <p>Roundtrip from $79</p>
             <p>
@@ -77,16 +111,16 @@
     <section id="section2">
       <h2>Get the best offers first!</h2>
       <p>Join our newsletter</p>
-      <span>E-mail</span>
+      <p>E-mail</p>
       <input type="text" placeholder="Your Email address" />
       <button class="button">Subscribe</button>
     </section>
-    <section>
+    <section id="section3">
       <h2>Contact</h2>
       <p>Let us book your next trip</p>
       <div>Chicago. US</div>
-      <div>Phone +00151515</div>
-      <div>Email contact@gmail.com</div>
+      <div>Phone: +00151515</div>
+      <div>Email: contact@gmail.com</div>
       <form>
         <input type="text" placeholder="First Name" required />
         <input type="email" placeholder="E-mail" required />
@@ -97,7 +131,7 @@
           placeholder="Your message..."
           required
         ></textarea>
-        <button class="button">SEND MESSAGE</button>
+        <button class="button btn-black">SEND MESSAGE</button>
       </form>
     </section>
     <footer>
