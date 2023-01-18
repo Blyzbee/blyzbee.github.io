@@ -1,3 +1,56 @@
+/* RESET */
+html {
+  font-size: 62.5%;
+}
+body {
+  font: 1.6rem sans-serif;
+  margin: 0;
+  padding: 0;
+}
+input,
+button {
+  font-size: inherit;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+input,
+textarea {
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--dark-color);
+}
+
+strong {
+  color: var(--dark-color);
+}
+
+section {
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
 :root {
   /* COLORS */
   --primary-color: #f44336;
@@ -18,50 +71,12 @@
   color: var(--dark-color);
 }
 
+.material-light-color {
+  color: var(--light-color);
+}
+
 .material-primary-color {
   color: var(--primary-color);
-}
-
-/* RESET */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-}
-
-figure {
-  margin: 0;
-}
-
-input,
-textarea {
-  padding: 10px 5px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  color: var(--primary-color);
-}
-
-h2 {
-  color: var(--dark-color);
-}
-
-strong {
-  color: var(--dark-color);
-}
-
-section {
-  margin: 10px 10px 20px 10px;
-}
-
-img {
-  width: 100%;
 }
 
 figure {
@@ -90,7 +105,7 @@ figcaption:hover {
 .button {
   background-color: var(--primary-color);
   color: var(--light-color);
-  padding: 10px;
+  padding: 1rem;
   margin: 0 0 0 0;
   font-weight: bold;
   border: none;
@@ -100,8 +115,8 @@ figcaption:hover {
   background-color: transparent;
   color: var(--dark-color);
   font-weight: bold;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 1rem;
+  margin-bottom: 2rem;
   border: solid 1px var(--grey-color);
 }
 
@@ -110,7 +125,7 @@ figcaption:hover {
 }
 
 header {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   border-bottom: solid 1px var(--grey-color);
 }
 
@@ -124,13 +139,13 @@ header {
 }
 
 #section1 li {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 #section2 {
   background-color: var(--dark-color);
   color: var(--light-color);
-  padding: 10px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -146,13 +161,13 @@ header {
 }
 
 #section3 > div {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
 
 #section3 > div > span {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 #section3 input,
@@ -163,7 +178,7 @@ header {
 }
 
 /* RESPONSIVE */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
   .header-background {
     display: flex;
     background-image: url("../assets/images/london2.jpg");
@@ -171,6 +186,11 @@ header {
     background-size: cover;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+  }
+
+  .header-background h2 {
+    grid-column: 1 / -1;
   }
 
   .header-background > div {
@@ -178,7 +198,38 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .header-background > div:nth-child(4) {
+  .header-background > div > div {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .header-background > div > div > span {
+    margin-right: 1rem;
+  }
+
+  .header-background .active {
+    background-color: var(--primary-color);
+  }
+
+  .header-background form {
+    background-color: var(--background-color);
+    padding: 1.5rem;
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header-background form button {
+    grid-column: 1 / -1;
+  }
+
+  .header-background form > div {
+    display: flex;
+    flex-direction: column;
+    margin: 01rem;
   }
 }
