@@ -177,6 +177,11 @@ header {
   margin-right: 1rem;
 }
 
+#section3 > form {
+  display: flex;
+  flex-direction: column;
+}
+
 #section3 input,
 #section3 textarea,
 #section3 button {
@@ -186,6 +191,10 @@ header {
 
 /* RESPONSIVE */
 @media screen and (min-width: 1024px) {
+  .button {
+    margin: auto auto auto 0;
+  }
+
   .header-background {
     display: flex;
     background-image: url("../assets/images/london2.jpg");
@@ -263,5 +272,9 @@ header {
   #section2 {
     margin: 0;
     padding: 1rem 2rem;
+  }
+
+  #section3 .button {
+    width: auto;
   }
 }
