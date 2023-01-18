@@ -2,15 +2,22 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font: 1.6rem sans-serif;
   margin: 0;
   padding: 0;
 }
+
+button {
+  cursor: pointer;
+}
+
 input,
 button {
   font-size: inherit;
 }
+
 ul,
 ol {
   list-style: none;
@@ -231,5 +238,30 @@ header {
     display: flex;
     flex-direction: column;
     margin: 01rem;
+  }
+
+  #section1 ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #section1 li {
+    margin-bottom: 0;
+  }
+
+  #section1 li:first-child {
+    grid-row: 1 / span 2;
+  }
+
+  #section1 > article:nth-child(2) > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #section2 {
+    margin: 0;
+    padding: 1rem 2rem;
   }
 }
