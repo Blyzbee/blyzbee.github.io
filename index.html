@@ -69,11 +69,11 @@
             <h2>Travel the world with us</h2>
             <div>
               <label for="from">From</label>
-              <input type="date" name="from" id="from" />
+              <input type="date" name="from" id="from" required />
             </div>
             <div>
               <label for="to">To</label>
-              <input type="date" name="to" id="to" />
+              <input type="date" name="to" id="to" required />
             </div>
             <button class="button btn-black">Search and find dates</button>
           </form>
@@ -164,8 +164,10 @@
         <h2>Get the best offers first!</h2>
         <p>Join our newsletter</p>
         <p>E-mail</p>
-        <input type="text" placeholder="Your Email address" />
-        <button class="button">Subscribe</button>
+        <form>
+          <input type="text" placeholder="Your Email address" required />
+          <button class="button">Subscribe</button>
+        </form>
       </section>
       <section id="section3">
         <h2>Contact</h2>
