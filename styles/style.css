@@ -61,7 +61,7 @@ img {
 
 :root {
   /* COLORS */
-  --primary-color: #f44336;
+  --primary-color: #aa1409;
   --background-color: #f1f1f1;
   --dark-color: black;
   --grey-color: #616161;
@@ -197,6 +197,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 footer > div {
