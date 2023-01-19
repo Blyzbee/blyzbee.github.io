@@ -8,6 +8,8 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 120rem;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
 }
 
 button {
@@ -214,6 +216,7 @@ footer img {
 @media screen and (min-width: 1024px) {
   .button {
     margin: auto auto auto 0;
+    padding: 1rem 10rem;
   }
 
   .header-background {
@@ -233,6 +236,7 @@ footer img {
   .header-background > div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 50rem;
   }
 
   .header-background > div > div {
@@ -262,6 +266,7 @@ footer img {
 
   .header-background form button {
     grid-column: 1 / -1;
+    margin: 0;
   }
 
   .header-background form > div {
