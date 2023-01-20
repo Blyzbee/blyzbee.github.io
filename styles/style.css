@@ -17,6 +17,7 @@ button {
 }
 
 input,
+textarea,
 button {
   font-size: inherit;
 }
@@ -289,7 +290,7 @@ footer img {
     grid-row: 1 / span 2;
   }
 
-  #section1 > article:nth-child(2) > div {
+  #section1 > article > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
